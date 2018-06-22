@@ -1,0 +1,55 @@
+﻿@charset "utf-8";
+/*内容区域宽度*/
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+/*清除浮动*/
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+	overflow: hidden;
+}
+/*链接样式*/
+a,a:link,a:visited{
+	text-decoration: none;
+	color: inherit;
+	-ms-behavior: url(ie-css3.htc);
+}
+
+/*字体样式*/
+body{
+	
+	font-size: 16px;
+	color: #333;
+	background: #eee;
+	line-height: 1.6em;
+	font-family:'Hiragino sansGB',"microsoft yahei",arial,'宋体',helvetica,'黑体',sans-serif;
+	
+}
+/*按钮样式*/
+button{
+	/*background: #ff9381;*/
+	/*color: #fff;*/
+	/*text-align: center;*/
+	border: none;
+	/*border-radius: 5px;*/
+	height: 40px;
+	outline: none;
+	padding: 0;
+}
+button:hover{
+	cursor: pointer;
+}
+/*i标签字体样式*/
+i{
+	font-style: normal;
+}
+p{
+	margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
+

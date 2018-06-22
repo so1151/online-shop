@@ -1,0 +1,227 @@
+@charset "utf-8";
+body{
+	font-size: 12px;
+}
+/**********header区域*********/
+.header .all .classify{
+	display: none;
+}
+.header .all:hover>.classify{
+	display: block;
+}
+/**********position区域*********/
+.position{
+	padding: 15px 0;
+	color: #2b2b2b;
+}
+/**********category产品分类信息区域*********/
+.category{
+	border: 1px solid #ddd;
+	border-bottom: none;
+	color: #2B2B2B;
+	background: #fff;
+}
+.category>div{
+	font-size: 13px;
+	line-height: 54px;
+	border-bottom: 1px solid #ddd;
+}
+.category .title{
+	width: 93px;
+	background: #eee;
+	text-align: center;
+}
+.category>div>i{
+	display: inline-block;
+}
+.category>div i.list{
+	padding: 0px 45px 0 0px;
+}
+.category>div i.list.first{
+	padding-left: 15px;
+}
+.category .brand .logo{
+	width: 120px;
+	height: 30px;
+	vertical-align: middle;
+}
+.category .brand .logo1{
+	background: url(../img/list/logo1.png) no-repeat center;
+}
+.category .brand .logo2{
+	background: url(../img/list/logo2.png) no-repeat center;
+}
+.category .brand .logo3{
+	background: url(../img/list/logo3.png) no-repeat center;
+}
+.category .brand .logo4{
+	background: url(../img/list/logo4.png) no-repeat center;
+}
+.category .brand .logo5{
+	background: url(../img/list/logo5.png) no-repeat center;
+}
+.category .brand .logo6{
+	background: url(../img/list/logo6.png) no-repeat center;
+}
+.category .brand .logo7{
+	background: url(../img/list/logo7.png) no-repeat center;
+}
+.category>div>span{
+	float: right;
+	color: #797979;
+	font-size: 12px;
+}
+.category>div>span i{
+	display: inline-block;
+}
+.category .brand  .more .img{
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	background: url(../img/list/more.png) no-repeat center ;
+}
+.category>div>span .moreSele{
+	text-align: center;
+	width: 51px;
+	line-height: 20px;
+	height: 20px;
+	vertical-align: middle;
+	border: 1px solid #ccc;
+	margin:0 12px 0 18px;
+	border-radius: 3px;
+	behavior: url(../js/PIE.htc);
+}
+.category .price .money{
+	width: 50px;
+	height: 20px;
+	border-radius: 3px;
+	behavior: url(../js/PIE.htc);
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+.category .price button{
+	color: #3e3e3e;
+	width: 51px;
+	height: 20px;
+	text-align: center;
+	border-radius: 3px;
+	behavior: url(../js/PIE.htc);
+}
+.category .price .list,
+.category .size .list,
+.category .system .list,
+.category .ram .list{
+	color: #3e3e3e;
+}
+/**********product产品列表*********/
+.product{
+	padding-top: 20px;
+	height: 1259px;
+}
+.product .productList{
+	height: 100%;
+	float: left;
+	background: #fff;
+	border-radius: 5px 5px 0px 0px;
+	behavior: url(../js/PIE.htc);
+	overflow: hidden;
+	margin-left: 8px;
+}
+.product .productList .title{
+	height: 58px;
+	width: 960px;
+	line-height: 58px;
+	font-size: 16px;
+	color: #797979;
+	border-bottom: 2px solid #FFC66E;
+}
+.product .productList .title>ul{
+	float: left;
+}
+.product .productList .title li{
+	display: inline-block;
+	padding: 0 26px;
+}
+.product .productList .title li.active{
+	color: #fff;
+	background: #FFC66E;
+}
+.product .productList .title li:hover{
+	cursor: pointer;
+}
+.product .productList .title .page{
+	float: right;
+	font-size: 12px;
+	color: #aaa;
+}
+.product .productList .title .page .icon{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.product .productList .title .page .left{
+	padding: 0 16px;
+	background: url(../img/list/左翻页.png) no-repeat center;
+}
+.product .productList .title .page .right{
+	padding: 0 20px 0 16px;
+	background: url(../img/list/右翻页.png) no-repeat center;
+}
+.product .productList .title .page .atPresent{
+	color: #ff9900;
+}
+/* 商品列表 */
+.product .productList .allList ul{
+	width: 960px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-size: 0;
+}
+.product .productList .allList .list{
+	display: inline-block;
+	width: 240px;
+	height: 314px;
+	box-sizing: border-box;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	text-align: center;
+	font-size: 12px;
+}
+.product .productList .allList .list .img{
+	margin: 24px 0;
+}
+.product .productList .allList .list>a:hover{
+	color: red;
+}
+.product .productList .allList .list .price{
+	color: red;
+	font-size: 16px;
+	padding-bottom: 20px;
+}
+
+.product .productList .allList .list .btn>button{
+	font-size: 14px;
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+}
+.product .productList .allList .list .btn .add{
+	background: #fff;
+	border: 1px solid #ccc;
+	color: #aaa; 
+	margin-right: 8px;
+}
+.product .productList .allList .list .btn .by{
+	color: #fff;
+	background: #ffc66e;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,526 @@
+@charset "utf-8";
+/**********header区域*********/
+.header .all .classify{
+	display: none;
+}
+.header .all:hover>.classify{
+	display: block;
+}
+.container{
+	width: 1200px;
+}
+/**********当前位置*********/
+.position{
+	color: #aaa;
+	font-size: 12px;
+	padding-top: 10px;
+	padding-bottom: 16px;
+}
+/**********商品*********/
+.production{
+	
+	border-top-right-radius: 5px;
+}
+/****左边商品信息****/
+.production .left{
+	float: left;
+	width: 960px;
+	padding: 30px 0;
+	margin-right: 8px;
+	background: #fff;
+	box-sizing: border-box;
+	border-top-left-radius: 5px; 
+}
+.production .left .img{
+	float: left;
+	width: 461px;
+}
+.production .left .img .bigImg{
+	padding-bottom: 28px;
+}
+.production .left .img .smallImg{
+	padding-left: 40px;
+} 
+.production .left .img .smallImg>span{
+	display: inline-block;
+	width: 68px;
+	height: 68px;
+	border: 1px solid #eee;
+	margin-right: 8px;
+	text-align: center;
+	line-height: 68px;
+	box-sizing: border-box;
+}
+.production .left .img .smallImg>span:last-of-type{
+	margin-right: 0;
+}
+.production .left .info{
+	float: left;
+	padding-left: 10px;
+	width: 460px;
+}
+.production .left .info h4{
+	margin: 0;
+	padding: 20px 0 14px 0;
+}
+.production .left .info>p{
+	font-size: 14px;
+	margin: 0;
+	padding-bottom: 16px;
+	color: #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.production .left .info .price{
+	padding: 16px 0;
+}
+.production .left .info .price>p{
+	float: left;
+	padding-right: 20px;
+	margin: 0;
+}
+.production .left .info .price .now{
+	float: left;
+}
+.production .left .info .price .now>div{
+	color: red;
+}
+.production .left .info .price .now>div>b{
+	font-size: 18px;
+}
+.production .left .info .price .now>p{
+	font-size: 14px;
+	color: #ccc;
+}
+.production .left .info .color{
+	height: 34px;
+}
+.production .left .info .color>p,
+.production .left .info .color>div{
+	float: left;
+	line-height: 34px;
+	height: 34px;
+	padding-right: 18px;
+}
+.production .left .info .edition{
+	padding-top: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+}
+.production .left .info .edition>p{
+	padding-right: 20px;
+}
+.production .left .info .edition>p{
+	float: left;
+}
+.production .left .info .edition>ul{
+	float: left;
+	font-size: 0;
+	width: 400px;
+}
+.production .left .info .edition>ul>li{
+	display: inline-block;
+	font-size: 12px;
+	color: #ccc;
+	border: 1px solid #ccc;
+	width: 183px;
+	height: 28px;
+	line-height: 28px;
+	border-radius: 3px;
+	text-align: center;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+.production .left .info .edition>ul>li.active{
+	border: none;
+	color: #fff;
+	background: #ffc66e;
+}
+.production .left .info .number{
+	padding: 16px 0;
+}
+.production .left .info .number>div{
+	float: left;
+}
+.production .left .info .number>div:first-of-type{
+	padding-right: 20px;
+}
+.production .left .info .number>div:last-of-type{
+	color: #ccc;
+}
+.production .left .info .number>div .change{
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+	text-align: center;
+	line-height: 20px;
+}
+.production .left .info .number>div .num{
+	padding: 0 24px;
+}
+.production .left .info .delivery .address{
+	padding-right: 70px;
+}
+.production .left .info .delivery .address,
+.production .left .info .delivery .company{
+	float: left;
+}
+.production .left .info .delivery .address>span,
+.production .left .info .delivery .company>span{
+	padding-right: 20px;
+}
+.production .left .info .delivery .address>select,
+.production .left .info .delivery .company>select{
+	color: #ccc;
+	width: 128px;
+	height: 34px;
+	text-align: center;
+	border-radius: 5px;
+	border-color: #ccc;
+}
+.production .left .info .companyInfo{
+	padding: 28px 0;
+	font-size: 14px;
+}
+.production .left .info .companyInfo>span:first-of-type{
+	padding-right: 20px;
+}
+.production .left .info .companyInfo>span>a{
+	color: #7297d7;
+}
+.production .left .info .btn>button{
+	width: 150px;
+	height:  46px;
+	border: 1px solid #ffc66e;
+	color: #ffc66e;
+	background: #fff;
+	border-radius: 5px;
+}
+.production .left .info .btn>button:last-of-type{
+	color: #fff;
+	background: #ffc66e;
+	margin-left: 14px;
+}
+
+/****看了又看****/
+.production .look{
+	border-top-left-radius: 0;
+}
+.production .look h3{
+	font-size: 14px;
+}
+.production .look h3>span{
+	float: left;
+}
+.production .look h3>button{
+	float: right;
+	background: none;
+	height: 58px;
+	padding-right: 10px;
+}
+.production .look>ul>li{
+	border-bottom: none;
+}
+
+/**********详情*********/
+.details{
+	padding-top: 20px;
+}
+.details .detailInfo{
+	width: 960px;
+	float: left;
+	background: #fff;
+	margin-left: 8px;
+}
+.details .detailInfo .secondNav{
+	font-size: 0;
+	box-sizing: border-box;
+	border-bottom: 1px solid #eee;
+}
+.details .detailInfo .secondNav>li{
+	display: inline-block;
+	width: 102px;
+	height:50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 16px;
+	color: #7f7f7f;
+}
+.details .detailInfo .secondNav>li:first-of-type{
+	border-top-left-radius: 5px;
+}
+.details .detailInfo .secondNav>li.active{
+	background: #ffc66e;
+	color: #fff;
+}
+.details .detailInfo .proInfoBox{
+	padding: 30px 20px;
+}
+.details .detailInfo .proInfo{
+	/* padding: 30px 20px; */
+	padding-bottom: 30px;
+	border-bottom: 1px solid #eee;
+}
+.details .detailInfo .proInfo p{
+	font-size: 12px;
+	color: #aaa;
+	margin: 10px 0;
+}
+.details .detailInfo .proInfo .bottom .one{
+	float: left;
+	width: 300px;
+	
+}
+.details .detailInfo .proInfo .bottom  .two{
+	float: left;
+	width: 300px;
+}
+.details .detailInfo .proInfo .bottom  .three{
+	float: left;
+	width: 300px;
+	position: relative;
+}
+.details .detailInfo .proInfo .bottom  .three>a{
+	position: absolute;
+	display: inline-block;
+	right:-20px;
+	bottom: 0;
+	font-size: 12px;
+	color: #aaa;
+	color: #7297d7;
+}
+.details .detailInfo .proInfoBox .proImg .img{
+	padding: 50px 30px;
+	border-bottom: 1px solid #eee;
+}
+.details .detailInfo .proInfoBox .proImg .img1{
+	text-align: center;
+}
+.details .detailInfo .proInfoBox .proImg .img1>h1{
+	padding-bottom: 50px;
+}
+.details .detailInfo .proInfoBox .proImg .img2>img,
+.details .detailInfo .proInfoBox .proImg .img2 .content{
+	float: left;
+}
+.details .detailInfo .proInfoBox .proImg .content{
+	width: 396px;
+}
+.details .detailInfo .proInfoBox .proImg .content .title{
+	padding-top: 100px;
+	padding-bottom: 50px;
+	font-size: 50px;
+	line-height: 50px;
+}
+.details .detailInfo .proInfoBox .proImg .content .detialsCon{
+	line-height: 60px;
+	font-size: 26px;
+	font-weight: normal;
+}
+.details .detailInfo .proInfoBox .proImg .img3 .content{
+	float: left;
+}
+.details .detailInfo .proInfoBox .proImg .img3>img{
+	float: right ;
+}
+.details .detailInfo .proInfoBox .proImg .img4 {
+	position: relative;
+}
+.details .detailInfo .proInfoBox .proImg .img4 .content{
+	position: absolute;
+	bottom: 250px;
+	right: 0;
+}
+.details .detailInfo .proInfoBox .proImg  .img:last-child{
+	border: none;
+}
+.details .detailInfo .sale .listStyle{
+	height: 50px;
+	line-height: 50px;
+	background: #ddd;
+	color: #7f7f7f;
+	padding-left: 20px;
+}
+/* 评论 */
+.details .detailInfo .sale .comment{
+	font-size: 12px;
+}
+.details .detailInfo .sale .comment .listStyle{
+	font-size: 16px;
+}
+.details .detailInfo .sale .comment .commentInfo{
+	height: 114px;
+	padding: 30px;
+	box-sizing: border-box;
+	font-size: 12px;
+}
+.details .detailInfo .sale .comment .commentInfo .list{
+	display: inline-block;
+	height: 54px;
+	vertical-align: top;
+	box-sizing: border-box;
+	line-height: 18px;
+}
+.details .detailInfo .sale .comment .commentInfo .good>b{
+	font-size: 42px;
+	color: red;
+	padding-right: 20px;
+	padding-top: 8px;
+	display: block;
+}
+.details .detailInfo .sale .comment .commentInfo .chart{
+	width: 234px;
+	color: #ccc;
+	border-right: 1px solid #ccc;
+}
+.details .detailInfo .sale .comment .commentInfo .chart .chartL>span{
+	width: 106PX;
+	height: 6PX;
+	display: inline-block;
+	border: 1PX solid #ccc;
+	margin:0 48px 0 6px;
+}
+.details .detailInfo .sale .comment .commentInfo .attention{
+	width: 326px;
+	padding: 0 46px;
+}
+.details .detailInfo .sale .comment .commentInfo .attention{
+	border-right: 1px solid #ccc;
+}
+.details .detailInfo .sale .comment .commentInfo .btn{
+	padding-left: 40px;
+}
+.details .detailInfo .sale .comment .commentInfo .btn>button{
+	width: 156px;
+	height: 26px;
+	background: #ff9381;
+	color: #fff;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+.details .detailInfo .sale .comment .commentNav{
+	padding: 4px 20px;
+	background: #f7f7f7;
+	color: #6b6b6b;
+}
+.details .detailInfo .sale .comment .commentNav>div{
+	display: inline-block; 
+}
+.details .detailInfo .sale .comment .commentNav .left {
+	width: 600px;
+}
+.details .detailInfo .sale .comment .commentNav .left a{
+	padding-right: 34px;
+}
+.details .detailInfo .sale .comment .commentNav .right .page{
+	padding-right: 22px;
+}
+.details .detailInfo .sale .comment .commentNav .left .active{
+	color: red;
+}
+.details .detailInfo .sale .comment .commentNav .right .totalP{
+	padding-right: 6px;
+}
+.details .detailInfo .sale .comment .commentNav .right .to>input{
+	width: 26px;
+	height: 18px;
+	border-radius: 5px;
+	border: 1px solid #6d6d6d;
+	text-align: center;
+}
+.details .detailInfo .sale .comment .commentNav .right>button{
+	background: none;
+	padding-left: 20px;;
+}
+.details .detailInfo .sale .comment .commentD{
+	padding: 20px ;
+	border-bottom: 1px solid #eee;
+}
+.details .detailInfo .sale .comment .commentD .user,
+.details .detailInfo .sale .comment .commentD .conmmentC{
+	float: left;
+}
+.details .detailInfo .sale .comment .commentD .user .avatar{
+	width: 28px;
+	height: 28px;
+	background: #ccc;
+	margin-right: 8px;
+	display: inline-block;
+	border-radius: 50%;
+}
+.details .detailInfo .sale .comment .commentD .conmmentC{
+	width: 796px;
+	padding-left: 40px;
+	box-sizing: border-box;
+	
+}
+.details .detailInfo .sale .comment .commentD .conmmentC .collect{
+	color: #ccc;
+}
+.details .detailInfo .sale .comment .commentD .conmmentC .collect>span{
+	font-size: 12px;
+}
+.details .detailInfo .sale .comment .commentD .conmmentC .collect .active{
+	color: #ff9381;
+}
+
+.details .detailInfo .sale .comment .commentD .conmmentC .img span{
+	display: inline-block;
+	width: 56px;
+	height: 56px;
+	border: 1px solid #ccc;
+	margin:10px 5px 10px 0;
+	text-align: center;
+}
+.details .detailInfo .sale .comment .commentD .conmmentC .img span>img{
+	height: 56px;
+}
+.details .detailInfo .sale .comment .commentD .conmmentC .bottom{
+	margin: 0;
+	padding-bottom: 20px;
+}
+.details .detailInfo .sale .comment .commentD .conmmentC .bottom>span{
+	float: right;
+}
+.details .detailInfo .sale .comment .commentD .conmmentC .bottom .time{
+	float: left;
+}
+.details .detailInfo .sale .comment .commentD .conmmentC .bottom .time{
+	color: #ccc;
+}
+.details .detailInfo .sale .comment .commentD .conmmentC .bottom .time>i{
+	padding-right: 20px;
+}
+.details .detailInfo .sale .comment .commentD .conmmentC .bottom .like{
+	padding-right: 10px;
+}
+.details .detailInfo .sale .comment .bottomP{
+	height: 40px;
+	padding-top: 10px;
+	box-sizing: border-box;
+	background: #eee;
+	text-align: right;
+	color: #6b6b6b;
+}
+.details .detailInfo .sale .comment .bottomP span{
+	line-height: 20px;
+}
+.details .detailInfo .sale .comment .bottomP .totalP{
+	padding:0  10px;
+}
+.details .detailInfo .sale .comment .bottomP  .to>input{
+	width: 26px; 
+	height: 18px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	text-align: center;
+}
+.details .detailInfo .sale .comment .bottomP>button{
+	height: 20px ;
+	width: 44px;
+	background: #ff9381;
+	color: #fff;
+	border-radius: 5px;
+}

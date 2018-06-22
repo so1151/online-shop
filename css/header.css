@@ -1,0 +1,266 @@
+﻿@charset "utf-8";
+/**********顶部导航区域*********/
+
+
+.nav{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background: #ccc;
+	font-size: 14px;
+}
+
+/*地区选择*/
+.nav .nav-box #site{
+	float: left;
+}
+.nav .nav-box #site select{
+	border: none;
+	outline: none;
+	background: none;
+	appearance: none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	
+}
+
+/*导航菜单*/
+.nav .nav-box .menu{
+	float: right;
+	line-height: 40px;
+}
+.nav .nav-box .menu a{
+	padding: 0 14px;
+	border-left: 1px solid #bbb;
+}
+.nav .nav-box .menu a:hover{
+	color: #fc3e3e;
+	
+}
+.nav .nav-box .menu a:first-child,
+.nav .nav-box .menu a:nth-child(2){
+	border-left: none;
+}
+.nav .nav-box .menu a:nth-child(2){
+	color: #FC3E3E;
+}
+.nav .nav-box .menu a:last-child>i{
+	margin-left: 6px;
+	font-size: inherit;
+}
+/**********顶部搜索区域*********/
+.searchBox{
+	width: 100%;
+}
+.search{
+	height: 120px;
+	overflow: hidden;
+	margin-left: calc( (100% - 1200px) / 2 );
+}
+.search .logo,
+.search .search-box{
+	float: left;
+}
+.search .car{
+	float: right;
+}
+.search .logo{
+	padding-top: 36px;
+}
+.search .search-box{
+	line-height: 120px;
+	position: relative;
+}
+.search .search-box .group{
+	background: #fff;
+	margin-left: 120px;
+	border-radius: 5px;
+	border: 1px solid #FC3E3E;
+	width: 580px;
+	height: 40px;
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	behavior: url(../js/PIE.htc);
+}
+.search .search-box .group input{
+	float: left;
+	height: 38px;
+	line-height: 38px;
+	width: 500px;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	vertical-align: middle;
+	background: transparent;
+	background: url(../img/index/search.png) 8px no-repeat;
+}
+.search .search-box .group input::-webkit-input-placeholder{
+	padding-left: 28px;
+	color: #ccc;
+	font-size: 16px;
+}
+.search .search-box .group>button{
+	float: right;
+	background: #FC3E3E;
+	width: 80px;
+	height: 40px;
+	margin-left: -6px;
+	vertical-align: middle;
+}
+.search .search-box .placeholder{
+	color: #ccc;
+	position: absolute;
+	top: 2px;
+	left: 128px;
+}
+.search .search-box .group input:focus~.placeholder{
+	display: none;
+}
+.search .search-box .hotSell{
+	line-height: 1em;
+	position: absolute;
+	bottom: 18px;
+	left: 124px;
+	color: #ccc;
+	font-size: 14px;
+	z-index: 10;
+}
+.search .search-box .hot>a{
+	padding-right: 10px;
+}
+.search .search-box .hotSell>a:hover{
+	color: #FC3E3E;
+}
+.search .car{
+	text-align: center;
+	line-height: 40px;
+}
+.search .car>a{
+	position: relative;
+	color: #FC3E3E;
+	width: 200px;
+	height: 40px;
+	margin-top: 40px;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	behavior:url(../js/PIE.htc) ;
+	display: inline-block;
+}
+.search .car .icon{
+	position: absolute;
+	left: 30px;
+	top: 10px;
+	width: 20px;
+	height: 18px;
+	margin-right: 8px;
+	display: inline-block;
+	background: url(../img/index/购物车空.png) no-repeat center;
+}
+.search .car .count{
+	position: absolute;
+	top: 5px;
+	right: 38px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #FC3E3E;
+	color: #fff;
+	display: inline-block;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 16px;
+	behavior:url(../js/PIE.htc) ;
+}
+/**********header区域*********/
+header{
+	width: 100%;
+	background: #666;
+	height: 40px;
+}
+.header{
+	font-size: 18px;
+	color: #fff;
+	min-width: 1200px;
+	
+}
+.header .all{
+	width: 200px;
+	height: 40px;
+	position: relative;
+	background: red;
+	text-align: center;
+	background: #333;
+	float: left;
+	padding-top: 8px;
+	box-sizing: border-box;
+}
+.header .all:hover{
+	background: #666;
+}
+.header>a{
+	height: 40px;
+	padding: 0 20px;
+	padding-top: 8px;
+	box-sizing: border-box;
+	display: inline-block;
+	/*float: left;*/
+}
+.header .all img{
+	margin-right: 8px;
+	vertical-align: middle;
+}
+
+.header>a.active{
+	background: #FC3E3E;
+}
+.header .classify{
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	top: 40px;
+	width: 100%;
+	height: 441px;
+	color: #333;
+	background: #fff;
+}
+.header .classify .classify-lis{
+	line-height: 50px;
+	font-size: 16px;
+}
+.header .classify .classify-lis:nth-child(2n){
+	background: #ccc;
+}
+.header .classify .classify-lis .classify-lis-icon{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin-left: 34px;
+	margin-right: 16px;
+	float: left;
+	margin-top: 13px;
+}
+.header .classify .classify-lis .classify-lis-1{
+	background: url(../img/index/家电.png) center no-repeat;
+}
+.header .classify .classify-lis .classify-lis-2{
+	background: url(../img/index/电脑.png) center no-repeat;
+}
+.header .classify .classify-lis .classify-lis-3{
+	background: url(../img/index/家具.png) center no-repeat;
+}
+.header .classify .classify-lis .classify-lis-4{
+	background: url(../img/index/服装.png) center no-repeat;
+}
+.header .classify .classify-lis .classify-lis-5{
+	background: url(../img/index/箱包.png) center no-repeat;
+}
+.header .classify .classify-lis .classify-lis-6{
+	background: url(../img/index/化妆品.png) center no-repeat;
+}
+.header .classify .classify-lis p{
+	text-align: left;
+	margin: 0;
+}

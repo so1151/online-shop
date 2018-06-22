@@ -1,0 +1,198 @@
+@charset "utf-8";
+body{
+	font-size: 14px;
+}
+/**********header区域*********/
+.header .all .classify{
+	display: none;
+}
+.header .all:hover>.classify{
+	display: block;
+}
+/**********consignee收货人信息*********/
+.commodity{
+	background: #fff;
+	border-radius: 5px 5px 0 0;
+	behavior: url(../js/PIE.htc);
+}
+.commodity .table{
+	width: 100%;
+	display: table;
+}
+.commodity .table .tr{
+	display: table-row;
+}
+.commodity .table .td{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.commodity .table .title .td{
+	height: 55px;
+	border-bottom: 1px solid #eee;
+}
+.commodity .table .title .td.all{
+	text-align: left;
+}
+.commodity .table .td.inventory{
+	width: 200px;
+}
+.commodity .table .td.price{
+	/*width: 80px;*/
+}
+.commodity .table .td.operation{
+	width: 188px;
+}
+/*radio选择*/
+.commodity .table .radio{
+	width:11px;
+	padding-left: 50px;
+	padding-right: 10px;
+	background: url(../img/cart/radio.png) no-repeat 50px ;
+}
+.commodity .table .title .radio{
+	margin-right: 10x;
+}
+.commodity .table .checked{
+	background: url(../img/cart/checked.png) no-repeat 50px;
+	
+}
+.commodity .table .radio input{
+	display: none;
+}
+.commodity .table .list{
+	height: 125px;
+	padding: 36px 0 36px 50px;
+	box-sizing: border-box;
+}
+.commodity .table .list .radio{
+	width: 11px;
+}
+.commodity .table .list .comImg{
+	padding-left: 54px;
+	width: 53px;
+	padding-right: 16px;
+}
+.commodity .table .list .comImg .img{
+	height: 53px;
+	width: 53px;
+	border: 1px solid #FF9381;
+	box-sizing: border-box;
+	background:url(../img/cart/comImg.jpg) no-repeat center;
+}
+.commodity .table .list .comInfor{
+	width: 344px;
+}
+.commodity .table .list .comInfor>a:hover{
+	color: #FF9381;
+}
+.commodity .table .list .price{
+	color: #FF9381;
+}
+.commodity .table .list .price>i{
+	font-weight: bold;
+}
+.commodity .table .list .number span{
+	height: 20px;
+	width: 85px;
+	border: 1px solid #c7c7c7;
+	box-sizing: border-box;
+}
+.commodity .table .list .number span>input{
+	background: none;
+	outline: none;
+	border: none;
+}
+.commodity .table .list .number span>i{
+	display: inline-block;
+}
+.commodity .table .list .number .minus,
+.commodity .table .list .number .plus{
+	cursor: pointer;
+	width: 18px;
+}
+
+.commodity .table .list .number .result{
+	width: 45px;
+	height: 20px;
+	text-align: center;
+	box-sizing: border-box;
+	border-left: 1px solid #C7C7C7;
+	border-right: 1px solid #C7C7C7;
+}
+.commodity .table .list .number .result:hover{
+	cursor: text;
+}
+.commodity .table .list .operation input{
+	display: block;
+	border: none;
+	outline: none;
+	background: none;
+	padding-left: 70px;
+}
+.commodity .table .list .operation input:hover{
+	color: #FF9381;
+}
+.commodity .pay{
+	line-height: 66px;
+	margin: 0 25px;
+	padding: 0px 25px;
+	border-top: 1px solid #e3e3e3;
+	color: #5C5C5C;
+}
+.commodity .pay .left{
+	float: left;
+}
+.commodity .pay .right{
+	float: right;
+}
+.commodity .pay .left .radio{
+	float: left;
+	padding-left: 20px;
+	background: url(../img/cart/radio.png) no-repeat left;
+}
+.commodity .pay .left .checked{
+	background: url(../img/cart/checked.png) no-repeat left;
+}
+.commodity .pay .left .select{
+	display: none;
+}
+.commodity .pay .left .remove{
+	padding-left: 44px;
+	color: #5C5C5C;
+	background: none;
+	border: none;
+	outline: none;
+	
+}
+.commodity .pay .left .remove:hover{
+	color: #FF9381;
+}
+.commodity .pay .right .number{
+	color: #FF9381;
+}
+.commodity .pay .right .calculate{
+	padding-left: 94px;
+}
+.commodity .pay .right .calculate .money{
+	font-weight: bold;
+	font-size: 18px;
+	padding-right: 26px;
+}
+.commodity .pay .right a input{
+	height: 38px;
+	width: 100px;
+	color: #FFF;
+	background: #FF9381;
+	outline: none;
+	border: none;
+	font-size: 18px;
+	border-radius: 5px;
+	behavior: url(../js/PIE.htc);
+}
+
+
+
+
+
+

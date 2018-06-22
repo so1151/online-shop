@@ -1,0 +1,90 @@
+/**********like收货人信息*********/
+.like{
+	border-radius: 5px 5px 0 0;
+	behavior:url(../js/PIE.htc);
+	background: #fff;
+	margin-top: 40px;
+}
+.like .title{
+	line-height: 58px;
+	height: 58px;
+	font-size: 18px;
+	border-bottom: 2px solid #FF9381;
+}
+.like .title .content{
+	float: left;
+	width: 120px;
+	color: #fff;
+	background: #FF9381;
+	text-align: center;
+	height: 100%;
+	border-radius: 5px 0px 0px 0px;
+	behavior:url(../js/PIE.htc);
+}
+.like .title .page{
+	float: right;
+	padding-right: 24px;
+}
+.like .title .page i{
+	vertical-align: middle;
+	width: 19px;
+	height: 19px;
+	display: inline-block;
+}
+.like .title .page i:hover{
+	cursor: pointer;
+}
+.like .title .page .left{
+	padding-right: 5px;
+	background: url(../img/cart/left.png) left no-repeat;
+}
+.like .title .page .right{
+	background: url(../img/cart/right.png) no-repeat;
+}
+.like .list{
+	font-size: 12px;
+}
+.like .list>li{
+	width: 240px;
+	height: 314px;
+	float: left;
+	text-align: center;
+	padding:12px 15px 26px 15px;
+	border-right: 1px solid #eee;
+	box-sizing: border-box;
+}
+.like .list>li:last-of-type{
+	border: none;
+}
+.like .list>li .price{
+	color: #FF2E2E;
+}
+.like .list>li .img{
+	width: 211px;
+	height: 211px;
+}
+.like .list>li .img1{
+	background: url(../img/cart/list-01.png) no-repeat center;
+}
+.like .list>li .img2{
+	background: url(../img/cart/list-02.jpg) no-repeat center;
+}
+.like .list>li .img3{
+	background: url(../img/cart/list-03.jpg) no-repeat center;
+}
+.like .list>li .img4{
+	background: url(../img/cart/list-04.jpg) no-repeat center;
+}
+.like .list>li .img5{
+	background: url(../img/cart/list-05.png) no-repeat center;
+}
+.like .list>li a{
+	display: inline-block;
+	width: 204px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.like .list>li a:hover{
+	color: #FF2E2E;
+}

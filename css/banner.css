@@ -1,0 +1,157 @@
+@charset "utf-8";
+/**********banner区域*********/
+.banner-box{
+	height: 441px;
+	background: #05061a;
+}
+.banner-box .banner-middle{
+	width: 800px;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.banner-box .banner-l{
+	width: calc((100% - 800px) / 2);
+	width: -webkit-calc((100% - 800px) / 2);
+	/*width: 200px;*/
+	height: 100%;
+}
+.banner-box .banner-r{
+	width: calc((100% - 800px) / 2)px;
+	height: 100%;
+	position: relative;
+}
+.banner-box .banner-l,
+.banner-box .banner-middle,
+.banner-box .banner-r{
+	float: left;
+}
+
+/*中间banner部分*/
+.banner-box .banner-middle .banner{
+	width: 500%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.banner-box .banner-middle .banner .item{
+	width: 20%;
+	height: 100%;
+	float: left;
+	
+}
+.banner-box .banner-middle .banner .item .img{
+	width: 800px;
+	height: 441px;
+	
+}
+.banner-box .banner-middle .banner .item .img1{
+	background: url(../img/index/banner-1.png) center no-repeat;
+}
+.banner-box .banner-middle .banner .item .img2{
+	background: url(../img/index/banner-2.jpg) center no-repeat;
+}
+.banner-box .banner-middle .banner .item .img3{
+	background: url(../img/index/banner-3.png) center no-repeat;
+}
+.banner-box .banner-middle .banner .item .img4{
+	background: url(../img/index/banner-4.jpg) center no-repeat;
+}
+.banner-box .banner-middle .banner .item .img5{
+	background: url(../img/index/banner-5.jpg) center no-repeat;
+}
+/*banner里面的按钮*/
+.banner-box .banner-middle .btn{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.banner-box .banner-middle .btn button{
+	width: 33px;
+	height: 57px;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	border-radius: 0;
+	background-color: transparent;
+}
+.banner-box .banner-middle .btn .prev{
+	left: 0;
+}
+.banner-box .banner-middle .btn .next{
+	right: 0;
+}
+.banner-box .banner-middle .btn .prev .img{
+	width: 33px;
+	height: 57px;
+	background: url(../img/index/实心-左翻页-01.png) no-repeat center;
+}
+.banner-box .banner-middle .btn .next .img{
+	width: 33px;
+	height: 57px;
+	background: url(../img/index/实心-右翻页-02.png) no-repeat center;
+}
+.banner-box .banner-middle .btnlist{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+.banner-box .banner-middle .btnlist span{
+	width: 8px;
+	height: 8px;
+	display: inline-block;
+	background: #666;
+	border-radius: 50%;
+}
+.banner-box .banner-middle .btnlist span.active{
+	background: #fff;
+}
+/*右侧广告*/
+.banner-box .banner-r .seckill{
+	width: 200px;
+	position: absolute;
+	top: 18px;
+	left: 0;
+}
+.banner-box .banner-r .seckill .seckill-img{
+	height: 200px;
+}
+.banner-box .banner-r .seckill .img1{
+	margin-bottom: 4px;
+	background: url(../img/index/seckill-img1.png) center no-repeat;
+}  
+.banner-box .banner-r .seckill .img2{
+	background: url(../img/index/seckill-img2.png) center no-repeat;
+}  
+/*右侧返回顶部*/
+.banner-box .banner-r .suspend{
+	position: fixed;
+	z-index: 99;
+	top: 50%;
+	right: calc((100% - 1200px) / 2 - 40px);
+}
+.banner-box .banner-r .suspend button{
+	width: 40px;
+	height: 40px;
+	border-radius: 0;
+	display: block;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-top: none;
+	background: #fff;
+}
+.banner-box .banner-r .suspend button:first-child{
+	border-top: 1px solid #ccc;
+}
+.banner-box .banner-r .suspend button:nth-child(3){
+	padding-left: 5px;
+}
+.banner-box .banner-r .suspend button .iconfont{
+	font-size: 22px;
+	color: #666;
+}
+
+

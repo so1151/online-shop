@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>开心购商城</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<link rel="stylesheet" type="text/css" href="css/normallize.css"/>
+		<!--网页全局公共样式-->
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<!--header区域样式-->
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<!--like猜你喜欢区域样式-->
+		<link rel="stylesheet" type="text/css" href="css/like.css"/>
+		<!--页脚样式-->
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<!--字体图标-->
+		<link rel="stylesheet" type="text/css" href="css/font/iconfont.css"/>
+		<!--当前订单页面样式-->
+		<link rel="stylesheet" type="text/css" href="css/list.css"/>
+		<!--hot模块样式-->
+		<link rel="stylesheet" type="text/css" href="css/hot.css"/>
+		
+		<!--[if lt IE 9 ]>
+			<script src="lib/html5shiv/html5shiv.min.js"></script>
+			<script src="lib/selectivizr-1.0.2/selectivizr-min.js"></script>
+			
+		<![endif]-->
+		<!--1.9.1版本jQuery插件-->
+		<script src="lib/jQuery/1.9.1/jquery.min.js"></script>
+		<!--地址三级联动插件 Distpicker-->
+		<script src="lib/jQueryDistpicker/distpicker.data.js"></script>
+		<!--顶部搜索区域的js文件-->
+		<script src="js/search.js"></script>
+		<!--当前页面js文件-->
+		<!--<script src="js/pay.js"></script>-->
+		
+		
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="nav-box container"> 
+				<div id="site">
+					<!--<select data-province="----选择省----"></select>
+					<select data-city="----选择市----"></select>
+					<select data-district="----选择区----"></select>-->
+				</div>
+				<div class="menu">
+					<a href="#">你好，请登录</a>
+					<a href="#">免费注册</a>
+					<a href="#">我的订单</a>
+					<a href="#">我的浏览</a>
+					<a href="#">我的收藏</a>
+					<a href="#">客户服务</a>
+					<a href="#">网站导航<i class="iconfont icon-xialajiantouxiao"></i></a>
+				</div>
+			</div>
+		</nav>
+		<!--顶部搜索区域-->
+		<div class="searchBox">
+			<div class="search container clearfix">
+				<div class="logo"><img src="img/index/newLogo.png"/></div>
+				<div class="search-box">
+					<div class="group">
+						<input id="search" type="text" value="" formmethod="" placeholder="请输入关键字" />
+						<button class="round">搜索</button>
+						<!--< ndiv class="placeholder">
+							<i class="iconfont icon-sousuo"></i>
+							请输入关键字
+						</div>-->
+					</div>
+					<div class="hotSell">
+						<a href="#">手机</a>
+						<a href="#">小米</a>
+						<a href="#">iphone</a>
+						<a href="#">三星</a>
+						<a href="#">华为</a>
+						<a href="#">冰箱</a>
+					</div>
+					
+				</div>
+				<div class="car">
+					<a href="#">
+						<i class="icon"></i>
+						我的购物车
+						<i class="count">0</i>
+					</a>
+					
+				</div>
+			</div>
+		</div>
+		<!--header导航区域-->	
+		<header >
+			<div class="header container clearfix">
+				<div class="all">
+					<a  href="#"><img src="img/index/list.png"/>全部商品分类</a>
+					<div class="classify">
+						<div class="classify-lis">
+							<i class="classify-lis-icon classify-lis-1"></i>
+							<p><a href="#">家用电器</a></p>
+						</div>
+						<div class="classify-lis">
+							<i class="classify-lis-icon classify-lis-2"></i>
+							<p><a href="#">电脑</a></p>
+						</div>
+						<div class="classify-lis">
+							<i class="classify-lis-icon classify-lis-3"></i>
+							<p><a href="#">家具</a></p>
+						</div>
+						<div class="classify-lis">
+							<i class="classify-lis-icon classify-lis-4"></i>
+							<p><a href="#">服装</a></p>
+						</div>
+						<div class="classify-lis">
+							<i class="classify-lis-icon classify-lis-5"></i>
+							<p><a href="#">箱包</a></p>
+						</div>
+						<div class="classify-lis">
+							<i class="classify-lis-icon classify-lis-6"></i>
+							<p><a href="#">个人化妆</a></p>
+						</div>
+					</div>
+				</div>
+				
+				<a class="active" href="#">首页</a>
+				<a href="#">手机城</a>
+				<a href="#">珠宝</a>
+				<a href="#">家电城</a>
+				<a href="#">促销商品</a>
+				<a href="#">预售</a>
+				<a href="#">数码城</a>
+				<a href="#">团购</a>
+				<a href="#">积分商城</a>
+				
+			</div>
+		</header>
+		<div class="container">
+			<!--position当前位置-->
+			<div class="position container">
+				<a href="#">当前位置</a>
+				 > 
+				<a href="#">电脑/办公</a>
+				 > 
+				<a href="#">手机/数码/通信 </a>
+				 > 
+				<a href="#">手机</a>
+			</div>
+			<!--category产品分类信息-->
+			<div class="category">
+				<div class="productCate">
+					<i class="title">产品分类</i>
+					<i class="list first">共2333个商品</i>
+				</div>
+				<div class="brand">
+					<i class="title">品牌</i>
+					<i class="logo logo1"></i>
+					<i class="logo logo2"></i>
+					<i class="logo logo3"></i>
+					<i class="logo logo4"></i>
+					<i class="logo logo5"></i>
+					<i class="logo logo6"></i>
+					<i class="logo logo7"></i>
+					<span>
+						<i class="more">
+							更多
+							<i class="img"></i>
+						</i>
+						<i class="moreSele">
+							+ 多选
+						</i>
+					</span>
+				</div>
+				<div class="price">
+					<i class="title">价格</i>
+					<i class="list first">0-199</i>
+					<i class="list">200-399</i>
+					<i class="list">400-699</i>
+					<i class="list">700-1399</i>
+					<i class="list">1400-2499</i>
+					<i class="list">2500-3499</i>
+					<i class="list">3500以上</i>
+					<input class="money" type="text" name="" id="" value="" />
+					<i>-</i>
+					<input class="money" type="text" name="" id="" value="" />
+					<button>确定</button>
+					<span>
+						<i class="moreSele">
+							+ 多选
+						</i>
+					</span>
+				</div>
+				<div class="size">
+					<i class="title">屏幕尺寸</i>
+					<i class="list first">4英寸及以下</i>
+					<i class="list">4.1-4.5英寸</i>
+					<i class="list">4.6-4.9英寸</i>
+					<i class="list">5.0英寸</i>
+					<i class="list">5.1-5.4英寸</i>
+					<i class="list">5.5英寸</i>
+					<i class="list">5.5-6.0英寸</i>
+					<i class="list">6.1英寸以上</i>
+					<span>
+						<i class="moreSele">
+							+ 多选
+						</i>
+					</span>
+
+				</div>
+				<div class="system">
+					<i class="title">制式</i>
+					<i class="list first">移动4G/联通4G/电信4G</i>
+					<i class="list">移动4G</i>
+					<i class="list">联通4G</i>
+					<i class="list">电信4G</i>
+					<i class="list">双卡单4G</i>
+					<i class="list">双卡双4G</i>
+					<i class="list">双卡</i>
+					<i class="list">其他</i>
+					<span>
+						<i class="moreSele">
+							+ 多选
+						</i>
+					</span>
+				</div>
+				<div class="ram">
+					<i class="title">运行内存</i>
+					<i class="list first">6GB</i>
+					<i class="list">4GB</i>
+					<i class="list">3GB</i>
+					<i class="list">2GB</i>
+					<i class="list">无</i>
+					<i class="list">其他</i>
+					<span>
+						<i class="moreSele">
+							+ 多选
+						</i>
+					</span>
+				</div>
+			</div>
+			<!--product产品列表-->
+			<div class="product clearfix">
+				<div class="hot">
+					<h3>热门推荐</h3>
+					<ul>
+						<li >
+							<div class="img hot1"></div>
+							<a href="#">
+								Aplle iPhone 6s 16GB
+								<br />
+								玫瑰金色移动联通电信4G手机
+							</a>
+							<div class="price">
+								¥ 4858.00
+							</div>
+						</li>
+						<li>
+							<div class="img hot2"></div>
+							<a href="#">
+								华为  (HUAWEI) M2 平板电脑
+								<br />
+								1920x1200 IPS屏 海思麒麟930...
+							</a>
+							<div class="price">
+								¥ 1588.00
+							</div>
+						</li>
+						<li>
+							<div class="img hot3"></div>
+							<a href="#">
+								华为 (HUAWEI) 畅想5s 全网通
+								<br />
+								2GB RAM+16GB ROM (金色)
+							</a>
+							<div class="price">
+								¥ 1169.00
+							</div>
+						</li>
+						<li>
+							<div class="img hot4"></div>
+							<a href="#">
+								荣耀X2 标准版 双卡双待双通
+								<br />
+								移动/联通双4G 16GB ROM(月光银)
+							</a>
+							<div class="price">
+								¥ 1999.00
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="productList">
+					<div class="title clearfix">
+						<ul>
+							<li class="active">综合<i class="iconfont icon-jiantou"></i></li>
+							<li >新品</li>
+							<li >热销</li>
+							<li >评论</li>
+							<li >价格</li>
+						</ul>
+						<div class="page">
+							<i class="number">共38个产品</i>
+							<i class="icon left"></i>
+							<i class="total">
+								<i class="atPresent">1</i>
+								/ 23
+							</i>
+							<i class="icon right"></i>
+						</div>
+					</div>
+					<div class="allList">
+						<ul>
+							<li class="list">
+								<div class="img">
+									<img src="img/list/list1.png" alt="" srcset="">
+								</div>
+								
+								<a href="#">
+									Apple iPhone 6s 16GB
+									<br />
+									玫瑰金色 移动联通电信4G手机
+								</a>
+								<div class="price">¥4858.00</div>
+								<div class="btn">
+									<button class="add">加入购物车</button>
+									<button class="by">立即购买</button>
+								</div>
+							</li>
+							<li class="list">
+									<div class="img">
+										<img src="img/list/list1.png" alt="" srcset="">
+									</div>
+									
+									<a href="#">
+										Apple iPhone 6s 16GB
+										<br />
+										玫瑰金色 移动联通电信4G手机
+									</a>
+									<div class="price">¥4858.00</div>
+									<div class="btn">
+										<button class="add">加入购物车</button>
+										<button class="by">立即购买</button>
+									</div>
+								</li>
+								<li class="list">
+									<div class="img">
+										<img src="img/list/list1.png" alt="" srcset="">
+									</div>
+									
+									<a href="#">
+										Apple iPhone 6s 16GB
+										<br />
+										玫瑰金色 移动联通电信4G手机
+									</a>
+									<div class="price">¥4858.00</div>
+									<div class="btn">
+										<button class="add">加入购物车</button>
+										<button class="by">立即购买</button>
+									</div>
+								</li>
+								<li class="list">
+									<div class="img">
+										<img src="img/list/list1.png" alt="" srcset="">
+									</div>
+									
+									<a href="#">
+										Apple iPhone 6s 16GB
+										<br />
+										玫瑰金色 移动联通电信4G手机
+									</a>
+									<div class="price">¥4858.00</div>
+									<div class="btn">
+										<button class="add">加入购物车</button>
+										<button class="by">立即购买</button>
+									</div>
+								</li>
+								<li class="list">
+									<div class="img">
+										<img src="img/list/list1.png" alt="" srcset="">
+									</div>
+									
+									<a href="#">
+										Apple iPhone 6s 16GB
+										<br />
+										玫瑰金色 移动联通电信4G手机
+									</a>
+									<div class="price">¥4858.00</div>
+									<div class="btn">
+										<button class="add">加入购物车</button>
+										<button class="by">立即购买</button>
+									</div>
+								</li>
+								<li class="list">
+									<div class="img">
+										<img src="img/list/list1.png" alt="" srcset="">
+									</div>
+									
+									<a href="#">
+										Apple iPhone 6s 16GB
+										<br />
+										玫瑰金色 移动联通电信4G手机
+									</a>
+									<div class="price">¥4858.00</div>
+									<div class="btn">
+										<button class="add">加入购物车</button>
+										<button class="by">立即购买</button>
+									</div>
+								</li>
+								<li class="list">
+									<div class="img">
+										<img src="img/list/list1.png" alt="" srcset="">
+									</div>
+									
+									<a href="#">
+										Apple iPhone 6s 16GB
+										<br />
+										玫瑰金色 移动联通电信4G手机
+									</a>
+									<div class="price">¥4858.00</div>
+									<div class="btn">
+										<button class="add">加入购物车</button>
+										<button class="by">立即购买</button>
+									</div>
+								</li>
+								<li class="list">
+									<div class="img">
+										<img src="img/list/list1.png" alt="" srcset="">
+									</div>
+									
+									<a href="#">
+										Apple iPhone 6s 16GB
+										<br />
+										玫瑰金色 移动联通电信4G手机
+									</a>
+									<div class="price">¥4858.00</div>
+									<div class="btn">
+										<button class="add">加入购物车</button>
+										<button class="by">立即购买</button>
+									</div>
+								</li>
+								<li class="list">
+									<div class="img">
+										<img src="img/list/list1.png" alt="" srcset="">
+									</div>
+									
+									<a href="#">
+										Apple iPhone 6s 16GB
+										<br />
+										玫瑰金色 移动联通电信4G手机
+									</a>
+									<div class="price">¥4858.00</div>
+									<div class="btn">
+										<button class="add">加入购物车</button>
+										<button class="by">立即购买</button>
+									</div>
+								</li>
+								<li class="list">
+									<div class="img">
+										<img src="img/list/list1.png" alt="" srcset="">
+									</div>
+									
+									<a href="#">
+										Apple iPhone 6s 16GB
+										<br />
+										玫瑰金色 移动联通电信4G手机
+									</a>
+									<div class="price">¥4858.00</div>
+									<div class="btn">
+										<button class="add">加入购物车</button>
+										<button class="by">立即购买</button>
+									</div>
+								</li>
+								<li class="list">
+									<div class="img">
+										<img src="img/list/list1.png" alt="" srcset="">
+									</div>
+									
+									<a href="#">
+										Apple iPhone 6s 16GB
+										<br />
+										玫瑰金色 移动联通电信4G手机
+									</a>
+									<div class="price">¥4858.00</div>
+									<div class="btn">
+										<button class="add">加入购物车</button>
+										<button class="by">立即购买</button>
+									</div>
+								</li>
+								<li class="list">
+									<div class="img">
+										<img src="img/list/list1.png" alt="" srcset="">
+									</div>
+									
+									<a href="#">
+										Apple iPhone 6s 16GB
+										<br />
+										玫瑰金色 移动联通电信4G手机
+									</a>
+									<div class="price">¥4858.00</div>
+									<div class="btn">
+										<button class="add">加入购物车</button>
+										<button class="by">立即购买</button>
+									</div>
+								</li>	
+								<li class="list">
+									<div class="img">
+										<img src="img/list/list1.png" alt="" srcset="">
+									</div>
+									
+									<a href="#">
+										Apple iPhone 6s 16GB
+										<br />
+										玫瑰金色 移动联通电信4G手机
+									</a>
+									<div class="price">¥4858.00</div>
+									<div class="btn">
+										<button class="add">加入购物车</button>
+										<button class="by">立即购买</button>
+									</div>
+								</li>
+								<li class="list">
+									<div class="img">
+										<img src="img/list/list1.png" alt="" srcset="">
+									</div>
+									
+									<a href="#">
+										Apple iPhone 6s 16GB
+										<br />
+										玫瑰金色 移动联通电信4G手机
+									</a>
+									<div class="price">¥4858.00</div>
+									<div class="btn">
+										<button class="add">加入购物车</button>
+										<button class="by">立即购买</button>
+									</div>
+								</li>
+								<li class="list">
+									<div class="img">
+										<img src="img/list/list1.png" alt="" srcset="">
+									</div>
+									
+									<a href="#">
+										Apple iPhone 6s 16GB
+										<br />
+										玫瑰金色 移动联通电信4G手机
+									</a>
+									<div class="price">¥4858.00</div>
+									<div class="btn">
+										<button class="add">加入购物车</button>
+										<button class="by">立即购买</button>
+									</div>
+								</li>
+								<li class="list">
+									<div class="img">
+										<img src="img/list/list1.png" alt="" srcset="">
+									</div>
+									
+									<a href="#">
+										Apple iPhone 6s 16GB
+										<br />
+										玫瑰金色 移动联通电信4G手机
+									</a>
+									<div class="price">¥4858.00</div>
+									<div class="btn">
+										<button class="add">加入购物车</button>
+										<button class="by">立即购买</button>
+									</div>
+								</li>
+				
+						</ul>
+					</div>    
+					
+					
+					
+				</div>
+			</div>
+			
+			
+			<!--like猜你喜欢-->
+			<div class="like  clearfix">
+					<div class="title ">
+						<div class="content">猜你喜欢</div>
+						<div class="page">
+							<i class="left"></i>
+							<i class="right"></i>
+						</div>
+					</div>
+					<ul class="list">
+						<li>
+							<div class="img img1"></div>
+							<a href="#">
+								荣耀X2 标准版 双卡双待双通
+								<br />
+								移动联通双4G 16GB ROM(月光银)
+							</a>
+							<div class="price">
+								¥ 1990.99
+							</div>
+						</li>
+						<li>
+							<div class="img img2"></div>
+							<a href="#">
+								华为(HUAWEI) M2 平板电脑
+								<br />
+								1920x1200 IPS屏 海思麒麟930
+							</a>
+							<div class="price">
+								¥ 1588.00
+							</div>
+						</li>
+						<li>
+							<div class="img img3"></div>
+							<a href="#">
+								Apple iPhone 6s 16GB
+								<br />
+								玫瑰金色 移动联通电信4G手机
+							</a>
+							<div class="price">
+								¥ 4858.00
+							</div>
+						</li>
+						<li>
+							<div class="img img4"></div>
+							<a href="#">
+								三星Galaxy A9高配版(A910)
+								<br />
+								精灵黑 全网通4G手机 双卡双待
+							</a>
+							<div class="price">
+								¥ 3499.00
+							</div>
+						</li>
+						<li>
+							<div class="img img5"></div>
+							<a href="#">
+								Apple iPhone 6s 16GB
+								<br />
+								玫瑰金色 移动联通电信4G手机
+							</a>
+							<div class="price">
+								¥ 4858.00
+							</div>
+						</li>
+					</ul>
+					
+				</div>
+				
+			
+		
+		</div>
+		
+		
+		
+		<!--页面底部-->
+		<div class="bottom">
+			<div class="container">
+				<ul class="service">
+					<li class="service-list">
+						<i class="icon icon1"></i>
+						<i class="slogan">7天无理由换货</i>
+					</li>
+					<li class="service-list">
+						<i class="icon icon2"></i>
+						<i class="slogan">15天免费换货</i>
+					</li>
+					<li class="service-list">
+						<i class="icon icon3"></i>
+						<i class="slogan">正品货  品质保证</i>
+					</li>
+					<li class="service-list">
+						<i class="icon icon4"></i>
+						<i class="slogan">专业售后服务</i>
+					</li>
+				</ul>
+				<ul class="guide clearfix">
+					<li class="guide-list">
+						<a class="title" href="#">新手上路</a>
+						<a class="list" href="#">新用户注册</a>
+						<a class="list" href="#">积分细则</a>
+						<a class="list" href="#">忘记密码</a>
+						<a class="list" href="#">如何搜索</a>
+						<a class="list" href="#">积分兑换说明</a>
+					</li>
+					<li class="guide-list">
+						<a class="title" href="#">购物指南</a>
+						<a class="list" href="#">会员修改密码</a>
+						<a class="list" href="#">修改个人资料</a>
+						<a class="list" href="#">会员等级</a>
+						<a class="list" href="#">常见问题</a>
+						<a class="list" href="#">修改收货地址</a>
+					</li>
+					<li class="guide-list">
+						<a class="title" href="#">售后服务</a>
+						<a class="list" href="#">售后政策</a>
+						<a class="list" href="#">退换货流程</a>
+						<a class="list" href="#">退款说明</a>
+						<a class="list" href="#">取消订单</a>
+					</li>
+					<li class="guide-list">
+						<a class="title" href="#">支付方式</a>
+						<a class="list" href="#">银联支付</a>
+						<a class="list" href="#">支付宝支付</a>
+						<a class="list" href="#">微信支付</a>
+						<a class="list" href="#">余额支付</a>
+						<a class="list" href="#">分期付款</a>
+					</li>
+					<li class="guide-list">
+						<a class="title" href="#">配送方式</a>
+						<a class="list" href="#">免运费政策</a>
+						<a class="list" href="#">物流查询</a>
+						<a class="list" href="#">上门自提</a>
+						<a class="list" href="#">配送服务承诺</a>
+					</li>
+					<li class="guide-list contact">
+						<div class="title">联系我们</div>
+						<div class="phone">02368771009</div>
+						<div class="time">
+							周一至周日8:00-18:00
+							<br />
+							(仅收市话费)
+						</div>
+						
+					</li>
+				</ul>
+				<div class="links">
+					<div class="title">友情链接：</div>
+					<a href="#">京东</a>
+					<a href="#">天猫</a>
+				</div>
+				<div class="wechat">
+					<div class="img1"></div>
+					<div class="img2"></div>
+				</div>
+				
+				
+			</div>
+		</div>
+		<!--页脚-->
+		<footer>
+			<div class="about">
+				<ul>
+					<li>
+						<a href="#">关于我们</a>
+					</li>
+					<li>
+						<a href="#">联系我们</a>
+					</li>
+					<li>
+						<a href="#">免运费政策</a>
+					</li>
+					<li>
+						<a href="#">物流查询</a>
+					</li>
+					<li>
+						<a href="#">上门自提</a>
+					</li>
+					<li>
+						<a href="#">配送服务承诺</a>
+					</li>
+					<li class="last">
+						Copyright© 2015-2017重庆马泽福电子商务有限公司版权所有 保留一切权利备案号：渝ICP备17014927号-2
+					</li>
+				</ul>
+			</div>
+			<div class="safety">
+				<ul>
+					<li>
+						<a href="#">
+							<i class="icon icon-1"></i>
+							<i>
+								经营性网站
+								<br />
+								备案信息
+							</i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="icon icon-2"></i>
+							<i>
+								可信网站
+								<br />
+								信用评价
+							</i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="icon icon-3"></i>
+							<i>
+								网络警察
+								<br />
+								提醒您
+							</i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="icon icon-4"></i>
+							<i>
+								诚信网站
+							</i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="icon icon-5"></i>
+							<i>
+								中国互联网
+								<br />
+								举报中心
+							</i>
+						</a>
+					</li>
+					
+				</ul>
+				
+				
+				
+			</div>
+		</footer>
+
+	</body>
+</html>

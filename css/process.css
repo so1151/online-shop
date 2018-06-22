@@ -1,0 +1,65 @@
+@charset "utf-8";
+/**********process步骤区域*********/
+.process-box{
+	margin: 20px 0 30px 0;
+}
+.process{
+	height: 48px;
+	position: relative;
+	font-size: 14px;
+	color: #fefefe;
+	line-height: 48px;
+}
+.process .myCar,
+.process .editOrder,
+.process .payOrder{
+	height: 48px;
+}
+.process .myCar{
+	width: 425px;
+	background: url(../img/cart/mayCar.png) center no-repeat;
+}
+.process .editOrder{
+	color: #ababab;
+	position: absolute;
+	left: 404px;
+	top: 0;
+	width: 423px;
+	background: url(../img/cart/editOrder.png) center no-repeat;
+}
+.process .payOrder{
+	color: #ababab;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 395px;
+	background: url(../img/cart/payOrder.png) center no-repeat;
+}
+.process .processList .icon{
+	color: #ababab;
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	vertical-align: middle;
+	margin-left: 15px;
+	margin-right: 4px;
+}
+.process .myCar .number{
+	margin-left: 20px;
+}
+.process .editOrder .number{
+	margin-left: 30px;
+}
+.process .payOrder .number{
+	margin-left: 40px;
+}
+.process .processList .carIcon{
+	background: url(../img/cart/car.png) center no-repeat;
+	
+}
+.process .processList .editIcon{
+	background: url(../img/cart/editIcon.png) center no-repeat;
+}
+.process .processList .payIcon{
+	background: url(../img/cart/payIcon.png) center no-repeat;
+}

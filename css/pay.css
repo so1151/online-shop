@@ -1,0 +1,240 @@
+@charset "utf-8";
+/**********header区域*********/
+.header .all .classify{
+	display: none;
+}
+.header .all:hover>.classify{
+	display: block;
+}
+/**********process步骤区域*********/
+.process .editOrder{
+	color: #fff;
+	background: url(../img/order/editOrder.png) center no-repeat;
+}
+.process .payOrder{
+	color: #fff;
+	background: url(../img/pay/payOrder.png) center no-repeat;
+}
+.process .processList .carIcon{
+	background: url(../img/order/car.png) center no-repeat;
+	
+}
+.process .processList .editIcon{
+	background: url(../img/order/editIcon.png) center no-repeat;
+}
+.process .processList .payIcon{
+	background: url(../img/pay/payIcon.png) center no-repeat;
+}
+/**********pay支付区域*********/
+.pay{
+	background: #fff;
+	font-size: 16px;
+	color: #666;
+	border-radius: 5px 5px 0px 0px;
+	behavior: url(../js/PIE.htc);
+	padding: 0 38px;
+	box-sizing: border-box;
+}
+.pay .success{
+	font-size: 18px;
+	color: #aaa;
+	text-align: center;
+	padding-bottom: 36px;
+}
+.pay .success .img{
+	padding:18px 0 28px 0;
+	width: 100%;
+	height: 50px;
+	background: url(../img/pay/success.png) no-repeat center;
+}
+.pay .success .content>i{
+	color: #FF9381;
+}
+.pay .orderInfor{
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	behavior: url(../js/PIE.htc);
+	padding: 34px 0px 34px 122px;
+}
+.pay .orderInfor .order{
+	padding-bottom: 25px;
+}
+.pay .orderInfor i{
+	vertical-align: middle;
+}
+.pay .orderInfor .img{
+	width: 28px;
+	height: 28px;
+	padding-right: 26px;
+	display: inline-block;
+}
+.pay .orderInfor .order .orderImg{
+	background: url(../img/pay/oder.png) no-repeat left;
+}
+.pay .orderInfor .order .orderNum{
+	padding-left: 24px;
+}
+.pay .orderInfor .express .expressImg{
+	background: url(../img/pay/express.png) no-repeat left;
+}
+.pay .orderInfor .express .address{
+	padding-left: 24px;
+}
+.pay .orderInfor .express .name{
+	padding: 0px 8px 0 8 px;
+}
+.pay .money{
+	text-align: right;
+	padding: 24px 0 51px 0;
+}
+.pay .money i{
+	color: #FF9381;
+}
+.pay .money .totalMoney{
+	font-weight: bold;
+}
+.pay h5{
+	margin: 0;
+	font-size: 20px;
+	color: #333;
+	padding: 0 0 10px 6px;
+	border-bottom: 1px solid #E2E2E2;
+}
+.pay .way{
+	padding-left: 30px;
+	height: 88px;
+	padding-top: 12px;
+	border-bottom: 1px solid #E2E2E2;
+}
+.pay .way>div{
+	display: inline-block;
+}
+.pay .way input{
+	width: 15px;
+	height: 54px;
+	outline: none;
+}
+.pay .way  .img{
+	padding:0 40px 0 10px;
+	width: 115px;
+	height: 54px;
+	display: inline-block;
+}
+.pay .way .img1{
+	background:url(../img/pay/way-01.png) no-repeat 10px ;
+}
+.pay .way .img2{
+	background:url(../img/pay/way-02.png) no-repeat 10px ;
+}
+.pay .way .img3{
+	background:url(../img/pay/way-03.png) no-repeat 10px ;
+}
+.pay .way .img4{
+	background:url(../img/pay/way-04.png) no-repeat 10px ;
+}
+.pay .way .img5{
+	background:url(../img/pay/way-05.png) no-repeat 10px ;
+}
+.pay .way .wechat{
+	/*height: 54px;*/
+}
+.pay .way .wechat .img2{
+	width: 44px;
+	padding-right: 0;
+}
+.pay .way .wechat>input{
+	
+}
+.pay .way .wechat>i{
+	height: 64px;
+	padding-right: 40px;
+	vertical-align: middle;
+	display: inline-block;
+}
+.pay  p{
+	font-size: 12px;
+	color: #333;
+}
+.pay .bank{
+	padding-left: 6px;
+}
+.pay .bank .img.checked{
+	border: 1px solid #FF9381;
+}
+.pay .bank .img{
+	width: 161px;
+	height: 41px;
+	box-sizing: border-box;
+	border: 1px solid #E2E2E2;
+	display: inline-block;
+	margin-right: 10px;
+}
+.pay .bank>div:hover{
+	cursor: pointer;
+}
+.pay .bank .img1{
+	background: url(../img/pay/logo1.png) no-repeat center;
+}
+.pay .bank .img2{
+	background: url(../img/pay/logo2.png) no-repeat center;
+}
+.pay .bank .img3{
+	background: url(../img/pay/logo3.png) no-repeat center;
+}
+.pay .bank .img4{
+	background: url(../img/pay/logo4.png) no-repeat center;
+}
+.pay .bank .img5{
+	background: url(../img/pay/logo5.png) no-repeat center;
+}
+.pay .bank .more{
+	display: inline-block;
+	font-size: 12px;
+	text-align: right;
+	padding-right: 16px;
+	width: 161px;
+	height: 41px;
+	line-height: 40px;
+	box-sizing: border-box;
+	border: 1px solid #E2E2E2;
+	vertical-align: top;
+}
+.pay .bank .more>a{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+.pay .bank .more>a:hover{
+	color: #FF9381;
+}
+.pay .bank .more i{
+	vertical-align: middle;
+	text-align: center;
+	line-height:10px;
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+}
+.pay .bank .submit{
+	text-align: right;
+	padding: 40px 0 20px 0;
+}
+.pay .bank .submit input{
+	width: 247px;
+	height: 57px;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+	background: #FF9381;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	behavior: url(../js/PIE.htc);
+}
+
+
+
+

@@ -1,0 +1,303 @@
+@charset "utf-8";
+body{
+	font-size: 14px;
+}
+/**********header区域*********/
+.header .all .classify{
+	display: none;
+}
+.header .all:hover>.classify{
+	display: block;
+}
+/**********process步骤区域*********/
+.process .editOrder{
+	color: #fff;
+	background: url(../img/order/editOrder.png) center no-repeat;
+}
+.process .processList .carIcon{
+	background: url(../img/order/car.png) center no-repeat;
+	
+}
+.process .processList .editIcon{
+	background: url(../img/order/editIcon.png) center no-repeat;
+}
+.process .processList .payIcon{
+	background: url(../img/cart/payIcon.png) center no-repeat;
+}
+/**********consignee收货人信息*********/
+.consignee{
+	font-size: 14px;
+	color: #5c5c5c;
+	background: #fff;
+	line-height: 53px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.consignee .addConsignee{
+	height: 53px;
+	padding:0 20px;
+	border-bottom: 1px solid #eee;
+	box-sizing: border-box;
+	
+	
+}
+.consignee a{
+	float: right;
+	color: #005ea7;
+}
+.consignee a:hover{
+	color: #FC3E3E;
+}
+.consignee .address{
+	padding: 0 30px;
+}
+.consignee .address>div{
+	height: 53px;
+	padding-left: 14px;
+}
+.consignee .address>div:first-of-type{
+	border-bottom: 1px solid #eee;
+	box-sizing: border-box;
+}
+.consignee .address .radio{
+	background: url(../img/order/radio.png) 14px no-repeat;
+	background-size: 13px 13px;
+	text-indent: 20px;
+	width: 100%;
+}
+.consignee .address .radio:hover{
+	cursor: pointer;
+}
+.consignee .address .radio.checked{
+	background: url(../img/order/checked.png) 14px no-repeat;
+	background-size: 13px 13px;
+	text-indent: 20px;
+}
+.consignee .address>div>input{
+	display: none;
+}
+.consignee .address .radio span .name{
+	padding-right: 5px;
+}
+.consignee .address .radio span .phone{
+	padding-left: 5px;
+}
+.consignee .address .radio>a{
+	padding-right: 30px;
+}
+/**********consignee收货人信息*********/
+.invoice{
+	background:#fff;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	font-size: 14px;
+	behavior: url(../js/PIE.htc);
+}
+.invoice .information{
+	border-bottom: 1px solid #ccc;
+	padding-left: 30px;
+	line-height: 52px;
+}
+.invoice .information .notice{
+	color: #ccc;
+}
+.invoice .alter{
+	padding:18px 0 18px 42px;
+}
+.invoice .alter .redact{
+	padding-bottom: 5px;
+}
+.invoice .alter .redact>a{
+	padding-left: 16px;
+	color: #005EA7;
+}
+.invoice .alter .redact>a:hover{
+	color: #FC3E3E;
+}
+.invoice .alter .notice i:last-of-type{
+	color: #FF9381;
+}
+/**********commodity商品信息*********/
+.commodity{
+	background: #fff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	behavior: url(../js/PIE.htc);
+}
+.commodity .table{
+	width: 100%;
+	display: table;
+}
+.commodity .table .tr{
+	display: table-row;
+}
+.commodity .table .td{
+	display: table-cell;
+	text-align: center;
+}
+.commodity .table .title .td{
+	vertical-align: middle;
+	height: 52px;
+	border-bottom: 1px solid #eee;
+}
+.commodity .table .title .td:first-of-type{
+	padding-left: 20px;
+}
+.commodity .table .td.comImg{
+	width: 155px;
+	box-sizing: border-box;
+	text-align: left;
+}
+.commodity .table .td.comInfor{
+	width: 344px;
+}
+.commodity .table .td.price{
+	width: 160px;
+}
+.commodity .table .td.price{
+	width: 136px;
+}
+.commodity .table .list .td{
+	border-bottom: 1px solid #eee;
+	height: 95px;
+	vertical-align: middle;
+}
+
+.commodity .table .list .td.comImg{
+	background: url(../img/order/comImg.png) no-repeat 20px;
+}
+.commodity .table .list .td.price{
+	color: #FF9381;
+}
+.commodity .table .list .td.price>i{
+	font-weight: bold;
+}
+/*totalPrice总价*/
+.commodity .totalPrice{
+	color: #888;
+	padding: 0 30px;
+}
+/*totalPrice总价 button标签*/
+.commodity .totalPrice  button{
+	width: 56px;
+	height: 23px;
+	margin: 0 5px;
+	box-sizing: border-box;
+	color: #fff;
+	background: #FF9381;
+}
+/*totalPrice总价 input标签*/
+.commodity .totalPrice input{
+	height: 23px;
+	box-sizing: border-box;
+	border: solid 1px #e2e2e2;
+}
+.commodity .totalPrice input:-ms-input-placeholder{
+	color: #ccc;
+	padding-left: 5px;
+}
+.commodity .totalPrice input:-moz-placeholder{
+	color: #ccc;
+	padding-left: 5px;
+}
+.commodity .totalPrice input::-webkit-input-placeholder{
+	color: #ccc;
+	padding-left: 5px;
+}
+.commodity .totalPrice .list{
+	padding:0 10px;
+	border-bottom: 1px solid #eee;
+}
+.commodity .totalPrice .otherExp>span{
+	padding-top: 30px;
+	display: inline-block;
+	width: 100%;
+}
+.commodity .totalPrice .otherExp>span input{
+	width: 136px;
+	box-sizing: border-box;
+	margin-left: 10px;
+}
+.commodity .totalPrice .otherExp>span>a>i{
+	color: #FF9381; 
+}
+.commodity .totalPrice .otherExp>span .minus{
+	float: right;
+}
+.commodity .totalPrice .otherExp .expressage .select select{
+	width: 84px;
+	box-sizing: border-box;
+	margin:20px 0px 20px 24px;
+	color: #888;
+}
+.commodity .totalPrice .otherExp .expressage .select .price{
+	float: right;
+}
+.commodity .totalPrice .otherExp .expressage .leaveMes>input{
+	width: 800px;
+	box-sizing: border-box;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+.commodity .totalPrice .pay .details {
+	padding-bottom: 20px;
+}
+.commodity .totalPrice .pay .balancePay{
+	padding-top: 20px;
+}
+.commodity .totalPrice .pay button{
+	background: none;
+	color: #ccc;
+	border: 1px solid #ccc;
+}
+.commodity .totalPrice .pay input{
+	margin-left: 24px;
+}
+.commodity .totalPrice .pay .password i{
+	color: #FF9381;
+}
+.commodity .totalPrice .payDet{
+	padding: 20px 10px;
+	text-align: right;
+}
+.commodity .totalPrice .payDet i{
+	width: 138px;
+	display: inline-block;
+}
+.commodity .totalPrice .submit{
+	padding: 20px 10px;
+	text-align: right;
+}
+.commodity .totalPrice .submit .total>i{
+	padding-left: 10px;
+	color: #FF9381;
+}
+.commodity .totalPrice .submit .total .totalPrice{
+	font-size: 24px;
+	font-weight: bold;
+	padding: 0;
+	padding-right: 20px;
+}
+.commodity .totalPrice .submit input{
+	outline: none;
+	width: 178px;
+	height: 42px;
+	font-size: 24px;
+	color: #fff;
+	background: #FF9381;
+	border-radius: 5px;
+	behavior: url(../js/PIE.htc);
+}
+.commodity .totalPrice .submit input:hover{
+	cursor: pointer;
+}
+.commodity .totalPrice .submit .address{
+	color: #ccc;
+	padding-top: 5px;
+}
+.commodity .totalPrice .submit .address .name{
+	padding-left: 50px;
+}
